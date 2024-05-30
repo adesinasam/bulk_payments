@@ -1,27 +1,26 @@
-## Expense Entry (Renamed)
+## Bulk Payments Entry (Renamed)
 
-ERPNext Expense Entry allows easy capture of non-item expenses without using the Journal Entry,
+ERPNext Bulk Payments Entry allows easy capture of non-item expenses without using the Journal Entry,
 
 ## Doctype Setup
-#### Expense Entry Doctype
+#### Bulk Payments Entry Doctype
 ```
 Users
 - Accounts Users - can draft
-- Expense Approver - can submit
+- Payments Approver - can submit
 
 Doctype Fields - EXP-.YEAR.-#####
 
 - Company
-- Request Date (Auto: Read-only Datetime)
-- Required Date (Required: Date)
-- Payment To
+- Date
+- Payment Mode (link)
 
 Accounting Dimensions:
 - Default Cost Center (Link)
 - Default Project (Link)
 
-Section and Table: Expense Details
-- Expense Account - (Required: Link - Filtered by Expenses)
+Section and Table: Bulk Payments Details
+- Bulk Payments Account - (Required: Link - Filtered by Payments)
 - Description - (Data)
 - Amount (Required: Currency)
 - Cost Center
@@ -32,7 +31,6 @@ Section: Additional Information
 - Approved By (Read-only)
 
 - column break
-- Payment Mode (link)
 - Reference
 - Reference Date
 ```
@@ -43,7 +41,7 @@ Section: Additional Information
 - Automatically create Journal Entries
 
 
-## Expense Workflow
+## Bulk Payments Workflow
 1. Draft
 2. Pending
 2. Approved
@@ -53,8 +51,8 @@ Section: Additional Information
 ## Installation
 
 ```
-bench get-app https://github.com/adesinasam/expense_journal.git
-bench --site site-name install-app expense_journal
+bench get-app https://github.com/adesinasam/bulk_payments.git
+bench --site site-name install-app bulk_payments
 ```
 
 
