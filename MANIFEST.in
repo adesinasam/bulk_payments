@@ -1,0 +1,18 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include bulk_payments *.css
+recursive-include bulk_payments *.csv
+recursive-include bulk_payments *.html
+recursive-include bulk_payments *.ico
+recursive-include bulk_payments *.js
+recursive-include bulk_payments *.json
+recursive-include bulk_payments *.md
+recursive-include bulk_payments *.png
+recursive-include bulk_payments *.py
+recursive-include bulk_payments *.svg
+recursive-include bulk_payments *.txt
+recursive-exclude bulk_payments *.pyc

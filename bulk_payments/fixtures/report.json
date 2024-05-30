@@ -1,0 +1,180 @@
+[
+ {
+  "add_total_row": 1,
+  "columns": [],
+  "disable_prepared_report": 0,
+  "disabled": 0,
+  "docstatus": 0,
+  "doctype": "Report",
+  "filters": [],
+  "is_standard": "No",
+  "javascript": null,
+  "json": "{\"filters\":[],\"fields\":[\"posting_date\",\"Bulk Payments Entry\"],[\"name\",\"Bulk Payments Entry\"],[\"description\",\"Bulk Payments Entry Item\"],[\"company\",\"Bulk Payments Entry\"],[\"amount\",\"Bulk Payments Entry Item\"],[\"status\",\"Bulk Payments Entry\"],[\"approved_by\",\"Bulk Payments Entry\"],[\"bulk_payments_account\",\"Bulk Payments Entry Item\"],[\"mode_of_payment\",\"Bulk Payments Entry\"],[\"cost_center\",\"Bulk Payments Entry Item\"],[\"project\",\"Bulk Payments Entry Item\"]],\"order_by\":\"`tabBulk Payments Entry`.`modified` desc\",\"add_totals_row\":true,\"page_length\":20,\"column_widths\":{\"posting_date\":120,\"name\":108,\"Bulk Payments Entry Item:description\":120,\"Bulk Payments Entry Item:amount\":120,\"status\":120,\"approved_by\":120,\"Bulk Payments Entry Item:bulk_payments_account\":120,\"mode_of_payment\":97,\"Bulk Payments Entry Item:cost_center\":120,\"Bulk Payments Entry Item:project\":120},\"group_by\":null}",
+  "letter_head": null,
+  "modified": "2024-05-26 19:17:16.499838",
+  "module": "Bulk Payments",
+  "name": "Bulk Payments Register",
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null,
+  "prepared_report": 0,
+  "query": null,
+  "ref_doctype": "Bulk Payments Entry",
+  "reference_report": null,
+  "report_name": "Bulk Payments Register",
+  "report_script": null,
+  "report_type": "Report Builder",
+  "roles": [
+   {
+    "parent": "Bulk Payments Register",
+    "parentfield": "roles",
+    "parenttype": "Report",
+    "role": "Payment Approver"
+   },
+   {
+    "parent": "Bulk Payments Register",
+    "parentfield": "roles",
+    "parenttype": "Report",
+    "role": "Accounts User"
+   }
+  ]
+ },
+ {
+  "add_total_row": 0,
+  "columns": [],
+  "disable_prepared_report": 0,
+  "disabled": 0,
+  "docstatus": 0,
+  "doctype": "Report",
+  "filters": [],
+  "is_standard": "Yes",
+  "javascript": null,
+  "json": null,
+  "letter_head": null,
+  "modified": "2017-02-24 20:19:19.231541",
+  "module": "Accounts",
+  "name": "Bank Reconciliation Statement",
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null,
+  "prepared_report": 0,
+  "query": null,
+  "ref_doctype": "Journal Entry",
+  "reference_report": null,
+  "report_name": "Bank Reconciliation Statement",
+  "report_script": null,
+  "report_type": "Script Report",
+  "roles": [
+   {
+    "parent": "Bank Reconciliation Statement",
+    "parentfield": "roles",
+    "parenttype": "Report",
+    "role": "Accounts User"
+   },
+   {
+    "parent": "Bank Reconciliation Statement",
+    "parentfield": "roles",
+    "parenttype": "Report",
+    "role": "Accounts Manager"
+   },
+   {
+    "parent": "Bank Reconciliation Statement",
+    "parentfield": "roles",
+    "parenttype": "Report",
+    "role": "Auditor"
+   }
+  ]
+ },
+ {
+  "add_total_row": 0,
+  "columns": [],
+  "disable_prepared_report": 0,
+  "disabled": 0,
+  "docstatus": 0,
+  "doctype": "Report",
+  "filters": [],
+  "is_standard": "Yes",
+  "javascript": null,
+  "json": null,
+  "letter_head": null,
+  "modified": "2017-02-24 20:19:26.257552",
+  "module": "Accounts",
+  "name": "Bank Clearance Summary",
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null,
+  "prepared_report": 0,
+  "query": null,
+  "ref_doctype": "Journal Entry",
+  "reference_report": null,
+  "report_name": "Bank Clearance Summary",
+  "report_script": null,
+  "report_type": "Script Report",
+  "roles": [
+   {
+    "parent": "Bank Clearance Summary",
+    "parentfield": "roles",
+    "parenttype": "Report",
+    "role": "Accounts User"
+   },
+   {
+    "parent": "Bank Clearance Summary",
+    "parentfield": "roles",
+    "parenttype": "Report",
+    "role": "Accounts Manager"
+   },
+   {
+    "parent": "Bank Clearance Summary",
+    "parentfield": "roles",
+    "parenttype": "Report",
+    "role": "Auditor"
+   }
+  ]
+ },
+ {
+  "add_total_row": 1,
+  "columns": [],
+  "disable_prepared_report": 0,
+  "disabled": 0,
+  "docstatus": 0,
+  "doctype": "Report",
+  "filters": [],
+  "is_standard": "Yes",
+  "javascript": null,
+  "json": null,
+  "letter_head": null,
+  "modified": "2017-02-24 20:16:43.005325",
+  "module": "Accounts",
+  "name": "Payment Period Based On Invoice Date",
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null,
+  "prepared_report": 0,
+  "query": null,
+  "ref_doctype": "Journal Entry",
+  "reference_report": null,
+  "report_name": "Payment Period Based On Invoice Date",
+  "report_script": null,
+  "report_type": "Script Report",
+  "roles": [
+   {
+    "parent": "Payment Period Based On Invoice Date",
+    "parentfield": "roles",
+    "parenttype": "Report",
+    "role": "Accounts User"
+   },
+   {
+    "parent": "Payment Period Based On Invoice Date",
+    "parentfield": "roles",
+    "parenttype": "Report",
+    "role": "Accounts Manager"
+   },
+   {
+    "parent": "Payment Period Based On Invoice Date",
+    "parentfield": "roles",
+    "parenttype": "Report",
+    "role": "Auditor"
+   }
+  ]
+ }
+]
