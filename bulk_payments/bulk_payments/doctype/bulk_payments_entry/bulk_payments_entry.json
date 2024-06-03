@@ -12,9 +12,6 @@
   "company",
   "column_break_1",
   "posting_date",
-  // "set_posting_time",
-  // "required_by",
-  // "payment_to",
   "mode_of_payment",
   "accounting_dimensions_section",
   "default_project",
@@ -47,15 +44,7 @@
    "in_list_view": 1,
    "label": "Posting Date",
    "read_only": 0
-   // "read_only_depends_on": "eval: doc.set_posting_time == 0;"
   },
-  // {
-  //  "allow_in_quick_entry": 1,
-  //  "fieldname": "required_by",
-  //  "fieldtype": "Datetime",
-  //  "label": "Required By",
-  //  "reqd": 1
-  // },
   {
    "allow_in_quick_entry": 1,
    "fieldname": "bulk_payments_details_section",
@@ -151,12 +140,6 @@
    "fieldtype": "Read Only",
    "label": "Approved By"
   },
-  // {
-  //  "fieldname": "payment_to",
-  //  "fieldtype": "Data",
-  //  "label": "Payment To",
-  //  "reqd": 1
-  // },
   {
    "fieldname": "section_break_8",
    "fieldtype": "Section Break"
@@ -196,12 +179,6 @@
    "fieldname": "column_break_20",
    "fieldtype": "Column Break"
   }
-  // {
-  //  "default": "0",
-  //  "fieldname": "set_posting_time",
-  //  "fieldtype": "Check",
-  //  "label": "Edit Posting Date"
-  // }
  ],
  "is_submittable": 1,
  "links": [],

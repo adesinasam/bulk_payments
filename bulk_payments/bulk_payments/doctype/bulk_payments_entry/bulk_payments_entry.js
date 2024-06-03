@@ -74,7 +74,6 @@ frappe.ui.form.on('Bulk Payments Entry', {
 					["Account", "company", "=", frm.doc.company],
 					["Account", "root_type", "=", "Asset"],
 					["Account", "account_type", "=", "Receivable"],
-					// ["Account", "parent_account", "Like", "%Indirect Expenses%"],
                     ["Account", "is_group", "=", "0"]
 				]
 			}

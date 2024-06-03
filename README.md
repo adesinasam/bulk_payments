@@ -1,4 +1,4 @@
-## Bulk Payments Entry (Renamed)
+## Bulk Payments Entry
 
 ERPNext Bulk Payments Entry allows easy capture of non-item expenses without using the Journal Entry,
 
@@ -9,7 +9,7 @@ Users
 - Accounts Users - can draft
 - Payments Approver - can submit
 
-Doctype Fields - EXP-.YEAR.-#####
+Doctype Fields - BPY-.YEAR.-#####
 
 - Company
 - Date
@@ -21,10 +21,10 @@ Accounting Dimensions:
 
 Section and Table: Bulk Payments Details
 - Bulk Payments Account - (Required: Link - Filtered by Payments)
-- Description - (Data)
+- Party Type
+- Party
 - Amount (Required: Currency)
 - Cost Center
-- Project
 
 Section: Additional Information
 - Remarks (Short text)
