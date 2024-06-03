@@ -71,14 +71,14 @@
    "idx": 0,
    "modified": "2024-05-25 19:17:16.499838",
    "modified_by": "Administrator",
-   "name": "Expense Entry-default_print_format",
+   "name": "Bulk Payments Entry-default_print_format",
    "owner": "Administrator",
    "parent": null,
    "parentfield": null,
    "parenttype": null,
    "property": "default_print_format",
    "property_type": "Data",
-   "value": "Expense Entry"
+   "value": "Bulk Payments Entry"
   }
  ],
  "sync_on_migrate": 1
