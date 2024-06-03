@@ -139,24 +139,10 @@ fixtures = ["Workflow", "Workflow State", "Workflow Action Master",
 		]
 
 	},
-	# {
-	# 	"dt": "Custom Field",
-	# 	"filters": [
-	# 		[
-	# 			"name", "in", [
-	# 				"Accounts Settings-expense_settings",
-	# 				"Accounts Settings-default_mode_of_payment",
-	# 				"Accounts Settings-column_break_16",
-	# 				"Accounts Settings-notify_all_approvers",
-	# 				"Accounts Settings-create_journals_entries_automatically"
-	# 			]
-	# 		]
-	# 	]
-	# },
 	{
 		"dt": "Notification",
 			"filters": [
-[
+				[
                                         "name", "in", [
                                                 "Bulk Payments Entry",
                                         ]
