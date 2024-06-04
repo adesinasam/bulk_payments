@@ -78,6 +78,20 @@ frappe.ui.form.on('Bulk Payments Entry', {
 				]
 			}
 		});
+		frm.set_query("party_type", 'payments', () => {
+			return {
+				filters: [
+				    ["Doctype", "name", "in", ["Customer"]]
+				]
+			}
+		});
+		frm.set_query("party", 'payments', () => {
+			return {
+				filters: [
+				    ["Customer", "disabled", "=", "0"]
+				]
+			}
+		});
 		frm.set_query("cost_center", 'payments', () => {
 			return {	
 				filters: [

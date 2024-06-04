@@ -7,11 +7,11 @@
  "field_order": [
   "bulk_payments_details_section",
   "bulk_payments_account",
-  "description",
+  "party_type",
+  "party",
   "column_break_4",
   "amount",
   "accounting_dimensions_section",
-  "project",
   "column_break_6",
   "cost_center"
  ],
@@ -24,13 +24,6 @@
    "label": "Bulk Payments Account",
    "options": "Account",
    "reqd": 1
-  },
-  {
-   "bold": 1,
-   "fieldname": "description",
-   "fieldtype": "Small Text",
-   "in_list_view": 1,
-   "label": "Description"
   },
   {
    "bold": 1,
@@ -54,14 +47,6 @@
    "options": "Cost Center"
   },
   {
-   "description": "Blanks default to Default Project if specified on the main form",
-   "fetch_from": "default_project",
-   "fieldname": "project",
-   "fieldtype": "Link",
-   "label": "Project",
-   "options": "Project"
-  },
-  {
    "fieldname": "column_break_6",
    "fieldtype": "Column Break"
   },
@@ -73,12 +58,29 @@
   {
    "fieldname": "column_break_4",
    "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "party_type",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Party Type",
+   "options": "DocType",
+   "reqd": 1
+  },
+  {
+   "bold": 1,
+   "fieldname": "party",
+   "fieldtype": "Dynamic Link",
+   "in_list_view": 1,
+   "label": "Party",
+   "options": "party_type",
+   "reqd": 1
   }
  ],
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2024-05-25 19:17:16.499838",
+ "modified": "2024-06-04 00:17:16.228033",
  "modified_by": "Administrator",
  "module": "Bulk Payments",
  "name": "Bulk Payments Entry Item",
