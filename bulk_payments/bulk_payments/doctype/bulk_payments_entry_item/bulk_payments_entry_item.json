@@ -11,7 +11,9 @@
   "party",
   "column_break_4",
   "amount",
+  "description",
   "accounting_dimensions_section",
+  "project",
   "column_break_6",
   "cost_center"
  ],
@@ -75,6 +77,20 @@
    "label": "Party",
    "options": "party_type",
    "reqd": 1
+  },
+  {
+   "bold": 1,
+   "fieldname": "description",
+   "fieldtype": "Small Text",
+   "in_list_view": 1,
+   "label": "Description"
+  },
+  {
+   "fetch_from": "bulk_payments_entry.default_project",
+   "fieldname": "project",
+   "fieldtype": "Link",
+   "label": "Project",
+   "options": "Project"
   }
  ],
  "index_web_pages_for_search": 1,

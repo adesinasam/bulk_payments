@@ -63,8 +63,10 @@ def make_journal_entry(bulk_payments_entry):
         for detail in bulk_payments_entry.payments:            
 
             accounts.append({  
-                'debit_in_account_currency': float(detail.amount),
+                'credit_in_account_currency': float(detail.amount),
                 'user_remark': str(detail.description),
+                'party_type': detail.party_type,
+                'party': detail.party,
                 'account': detail.bulk_payments_account,
                 'project': detail.project,
                 'cost_center': detail.cost_center
@@ -96,8 +98,7 @@ def make_journal_entry(bulk_payments_entry):
             )
 
         accounts.append({  
-            'credit_in_account_currency': float(bulk_payments_entry.total),
-            'user_remark': str(detail.description),
+            'debit_in_account_currency': float(bulk_payments_entry.total),
             'account': pay_account
         })
 
@@ -105,16 +106,15 @@ def make_journal_entry(bulk_payments_entry):
         je = frappe.get_doc({
             'title': bulk_payments_entry.name,
             'doctype': 'Journal Entry',
-            'voucher_type': 'Journal Entry',
+            'voucher_type': 'Bank Entry',
             'posting_date': bulk_payments_entry.posting_date,
             'company': bulk_payments_entry.company,
             'accounts': accounts,
-            'user_remark': bulk_payments_entry.remarks,
+            'user_remark': str(bulk_payments_entry.remarks),
             'mode_of_payment': bulk_payments_entry.mode_of_payment,
             'cheque_date': bulk_payments_entry.clearance_date,
             'reference_date': bulk_payments_entry.clearance_date,
             'cheque_no': bulk_payments_entry.payment_reference,
-            'pay_to_recd_from': bulk_payments_entry.payment_to,
             'bill_no': bulk_payments_entry.name
         })
 

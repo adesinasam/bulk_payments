@@ -108,6 +108,13 @@ frappe.ui.form.on('Bulk Payments Entry', {
 				]
 			}
 		});
+		frm.set_query("mode_of_payment", () => {
+			return {
+				filters: [
+					["Mode of Payment", "type", "=", "Bank"]
+				]
+			}
+		});
 		
 	}
 
