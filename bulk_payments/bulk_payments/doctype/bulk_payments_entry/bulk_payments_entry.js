@@ -81,7 +81,7 @@ frappe.ui.form.on('Bulk Payments Entry', {
 		frm.set_query("party_type", 'payments', () => {
 			return {
 				filters: [
-				    ["Doctype", "name", "in", ["Customer"]]
+				    ["Doctype", "name", "=", "Customer"]
 				]
 			}
 		});

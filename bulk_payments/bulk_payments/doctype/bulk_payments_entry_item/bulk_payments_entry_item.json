@@ -62,6 +62,7 @@
    "fieldtype": "Column Break"
   },
   {
+   "default": "Customer",
    "fieldname": "party_type",
    "fieldtype": "Link",
    "in_list_view": 1,
