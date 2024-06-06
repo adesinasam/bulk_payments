@@ -110,7 +110,7 @@ def make_journal_entry(bulk_payments_entry):
             'posting_date': bulk_payments_entry.posting_date,
             'company': bulk_payments_entry.company,
             'accounts': accounts,
-            'user_remark': str(bulk_payments_entry.remarks),
+            'user_remark': "Bank Bulk Payment Entry {}" .format(str(bulk_payments_entry.remarks)),
             'mode_of_payment': bulk_payments_entry.mode_of_payment,
             'cheque_date': bulk_payments_entry.clearance_date,
             'reference_date': bulk_payments_entry.clearance_date,
